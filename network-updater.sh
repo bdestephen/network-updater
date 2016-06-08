@@ -26,8 +26,8 @@ writedhcpfile()
     auto lo
     iface lo inet loopback
 
-     auto eth0
-    iface eth0 inet dhcp
+     auto ens160
+    iface ens160 inet dhcp
 EOF
 #
       echo ""
@@ -58,8 +58,8 @@ writestaticfile()
   auto lo
   iface lo inet loopback
 
-  auto eth0
-  iface eth0 inet static
+  auto ens160
+  iface ens160 inet static
           address $staticip
           netmask $netmask
           gateway $routerip
